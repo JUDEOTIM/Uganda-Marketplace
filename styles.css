@@ -44,3 +44,15 @@ header.h2 {
     padding: 10px;
     text-decoration: none;
 }
+
+.media {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+}
+
+.media img,
+.media video {
+    width: 150px;
+    border-radius: 5px;
+}
