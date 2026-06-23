@@ -6,6 +6,53 @@
     <title>Uganda-Market-Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+let products = JSON.parse(localStorage.getItem("products")) || [];
+
+function renderProducts() {
+    let container = document.getElementById("productList");
+    container.innerHTML = "";
+
+    products.forEach(p => {
+        container.innerHTML += `
+            <div class="card">
+                <h3>${p.name}</h3>
+                <p>${p.desc}</p>
+                <p><strong>Location:</strong> ${p.location}</p>
+                <p><strong>Price:</strong> ${p.price}</p>
+                <a href="https://wa.me/${p.phone}" target="_blank">Contact Seller</a>
+            </div>
+        `;
+    });
+}
+
+function addProduct() {
+
+    let product = {
+        name: document.getElementById("name").value,
+        desc: document.getElementById("desc").value,
+        location: document.getElementById("location").value,
+        price: document.getElementById("price").value,
+        phone: document.getElementById("phone").value
+    };
+
+    products.push(product);
+
+    localStorage.setItem("products", JSON.stringify(products));
+
+    renderProducts();
+
+    // clear inputs
+    document.getElementById("name").value = "";
+    document.getElementById("desc").value = "";
+    document.getElementById("location").value = "";
+    document.getElementById("price").value = "";
+    document.getElementById("phone").value = "";
+}
+
+// load on start
+renderProducts();
+</script>
 <body>
 
 <header>
@@ -14,6 +61,21 @@
     <p>Find and Buy any quality item near your arear</p> 
     <p>sell easily near you</p>
 </header>
+
+<section class="upload">
+    <h2>Post Your Product</h2>
+
+    <input type="text" id="name" placeholder="Product Name">
+    <input type="text" id="desc" placeholder="Description">
+    <input type="text" id="location" placeholder="Location">
+    <input type="text" id="price" placeholder="Price">
+    <input type="text" id="phone" placeholder="WhatsApp Number">
+
+    <button onclick="addProduct()">Submit Product</button>
+</section>
+
+<section class="products" id="productList">
+</section>
 
 <section class="products">
 
@@ -98,11 +160,9 @@
         <p><strong>Price:</strong> 900,000 UGX</p>
 
         <a href="https://wa.me/256789659232" target="_blank">
-            Contact Seller
-        </a>
-
+            Contact Seller</a>
     </div>
-
+     <a href="index.html">how to rear chickens</a>
 </section>
 
 
@@ -114,10 +174,11 @@
         <p><strong>Location:</strong> Rubaga</p>
         <p><strong>Price:</strong> 120,000 UGX</p>
         <a href="https://wa.me/256705679367" target="_blank">Contact Seller</a>
+        
     </div>
-    
+    <a href="index.html">how to rear chickens</a>
 </section>
-
+<a href="index.html">how to rear chickens</a>
 <footer>
     <p>© 2026 Uganda-Market-Hub</p>
 </footer>
