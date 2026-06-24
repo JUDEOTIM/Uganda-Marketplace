@@ -1,10 +1,12 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poultry Farming Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,96 +25,222 @@
         <li><a href="#feeding">Feeding</a></li>
         <li><a href="#health">Health</a></li>
         <li><a href="#market">Market</a></li>
+        <li><a href="#budget">Budget</a></li>
     </ul>
 </nav>
 
 <main>
 
-<section id="start">
-    <h2>1. Start Small</h2>
-    <p>Begin with 20–50 chickens to reduce risk and gain experience.</p>
-    
-    <ul>
-        <h4>Why start small?</h4>
-        <li>Easier management</li>
-        <li>Lower startup cost</li>
-        <li>Opportunity to learn</li>
-    </ul>
-    <h4>💡 Example:</h4>
-    <p>Start with 30 birds, learn feeding, disease control, and marketing → then expand to 100+.</p>
-</section>
+    <!-- 1. START SMALL -->
+    <div class="section-card" id="start">
+        <div class="section-body">
+            <span class="section-num">Step 1</span>
+            <h2>Start Small</h2>
+            <p>Begin with 20–50 chickens to reduce risk and gain experience.</p>
+            <h4>Why start small?</h4>
+            <ul>
+                <li>Easier management</li>
+                <li>Lower startup cost</li>
+                <li>Opportunity to learn before scaling</li>
+            </ul>
+            <div class="tip-box">
+                💡 <strong>Example:</strong> Start with 30 birds, learn feeding, disease control, and marketing → then expand to 100+.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&auto=format&fit=crop"
+                alt="Small backyard flock of chickens on a farm"
+                loading="lazy"
+            />
+            <div class="img-caption">A small, manageable starter flock</div>
+        </div>
+    </div>
 
-<section id="breed">
-    <h2>2. Choose the Right Breed</h2>
-    <p>Your goal determines the type of chicken:</p>
-    <ul>
-        <li><strong>Layers:</strong> For egg production and they start laying at ~5 months</li>
-        <li><strong>Broilers:</strong> For meat production (grow fast, ready in 6–8 weeks)</li>
-        <li><strong>Kuroiler/Local breeds:</strong> Best for beginners</li>
-    </ul>
-    <p>Local breeds are hardy, disease-resistant, and require less intensive feeding.</p>
-</section>
+    <!-- 2. BREEDS -->
+    <div class="section-card flip" id="breed">
+        <div class="section-body">
+            <span class="section-num">Step 2</span>
+            <h2>Choose the Right Breed</h2>
+            <p>Your goal determines the type of chicken:</p>
+            <ul>
+                <li><strong>Layers:</strong> For egg production — start laying at ~5 months</li>
+                <li><strong>Broilers:</strong> For meat — ready in 6–8 weeks</li>
+                <li><strong>Kuroiler / Local breeds:</strong> Best for beginners</li>
+            </ul>
+            <h4>Why Kuroiler / local breeds?</h4>
+            <ul>
+                <li>Resistant to diseases</li>
+                <li>Can survive on mixed feeding</li>
+                <li>Dual-purpose (eggs + meat)</li>
+                <li>Require less intensive feeding</li>
+            </ul>
+        </div>
+        <div class="section-img">
+            <img src=images/kuroiler.jpg/>
+            <div class="img-caption">Choosing the right breed is your first big decision</div>
+        </div>
+    </div>
 
-<section id="housing">
-    <h2>3. Poultry Housing</h2>
-    <p>Proper housing ensures healthy growth and protection.</p>
-    <ul>
-        <li>Good ventilation (fresh air prevents disease)</li>
-        <li>Dry flooring (use sawdust)</li>
-        <li>Protection from predators (dogs, snakes, thieves)</li>
-        <li>Adequate space to avoid overcrowding(0.1–0.2 m² per bird)</li>
-    </ul>
-    <h4>💡 Tip:</h4>
-    <p>Use the deep litter system (cheap and effective for beginners).</p>
-</section>
+    <!-- 3. HOUSING -->
+    <div class="section-card" id="housing">
+        <div class="section-body">
+            <span class="section-num">Step 3</span>
+            <h2>Poultry Housing</h2>
+            <p>Proper housing ensures healthy growth and protection.</p>
+            <ul>
+                <li>Good ventilation (fresh air prevents disease)</li>
+                <li>Dry flooring — use wood shavings, not sawdust</li>
+                <li>Protection from predators (dogs, snakes, thieves)</li>
+                <li>Adequate space — 0.1–0.2 m² per bird</li>
+            </ul>
+            <div class="tip-box">
+                💡 <strong>Tip:</strong> Use the deep litter system — cheap and effective for beginners.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=800&auto=format&fit=crop"
+                alt="Inside a clean poultry house with chickens"
+                loading="lazy"
+            />
+            <div class="img-caption">Well-ventilated housing keeps birds healthy</div>
+        </div>
+    </div>
 
-<section id="water">
-    <h2>4. Clean Water Supply</h2>
-    <p>Water is critical for chicken survival.</p>
-    <ul>
-        <li>Provide fresh water daily</li>
-        <li>Clean drinkers regularly</li>
-        <li>Avoid contamination</li>
-    </ul>
-</section>
+    <!-- 4. WATER -->
+    <div class="section-card flip" id="water">
+        <div class="section-body">
+            <span class="section-num">Step 4</span>
+            <h2>Clean Water Supply</h2>
+            <p>Chickens drink more than they eat — water is critical for survival and production.</p>
+            <ul>
+                <li>Provide fresh water every day</li>
+                <li>Clean drinkers regularly</li>
+                <li>Avoid any contamination</li>
+                <li>Change water daily — dirty water causes diarrhoea that can wipe out your flock</li>
+            </ul>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1485637701894-09ad422f6de6?w=800&auto=format&fit=crop"
+                alt="Chickens drinking from clean water drinkers"
+                loading="lazy"
+            />
+            <div class="img-caption">Clean, full drinkers every single morning</div>
+        </div>
+    </div>
 
-<section id="feeding">
-    <h2>5. Feeding</h2>
-    <p>Feed accounts for 60–70% of costs.</p>
-    <ul>
-        <li>Starter feed (0–4 weeks)</li>
-        <li>Grower feed (4–8 weeks)</li>
-        <li>Layer mash (egg production)</li>
-    </ul>
-    <p>Feed chickens 2–3 times daily and minimize waste.</p>
-</section>
+    <!-- 5. FEEDING -->
+    <div class="section-card" id="feeding">
+        <div class="section-body">
+            <span class="section-num">Step 5</span>
+            <h2>Feeding</h2>
+            <p>Feed is your biggest cost (60–70%), so manage it carefully.</p>
+            <ul>
+                <li>Starter feed (0–4 weeks)</li>
+                <li>Grower feed (4–8 weeks)</li>
+                <li>Layer mash (for egg production)</li>
+                <li>Feed 2–3 times daily and minimise waste</li>
+                <li>Supplement with greens for local breeds</li>
+            </ul>
+            <div class="tip-box">
+                💡 Formulating your own feed from maize, soya, and fish meal can cut feed costs by up to 30%.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&auto=format&fit=crop"
+                alt="Chickens feeding on grain feed"
+                loading="lazy"
+            />
+            <div class="img-caption">Consistent, measured feeding drives fast growth</div>
+        </div>
+    </div>
 
-<section id="health">
-    <h2>6. Health & Vaccination</h2>
-    <p>Prevent diseases through proper care.</p>
-    <ul>
-        <li>Vaccinate regularly</li>
-        <li>Maintain cleanliness</li>
-        <li>Limit visitors (biosecurity)</li>
-    </ul>
-    <p>Common diseases include Newcastle and Gumboro.</p>
-</section>
+    <!-- 6. HEALTH -->
+    <div class="section-card flip" id="health">
+        <div class="section-body">
+            <span class="section-num">Step 6</span>
+            <h2>Health &amp; Vaccination</h2>
+            <p>Disease is the biggest threat in poultry farming. Prevent rather than treat.</p>
+            <h4>Prevention:</h4>
+            <ul>
+                <li>Vaccinate regularly (Newcastle, Gumboro, IB)</li>
+                <li>Maintain cleanliness inside the house</li>
+                <li>Limit visitors — biosecurity saves lives</li>
+            </ul>
+            <div class="tip-box">
+                ⚠️ Common killers: Newcastle Disease, Gumboro, and Coccidiosis. Vaccinate on schedule from Day 7.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1559963110-71b394e7494d?w=800&auto=format&fit=crop"
+                alt="Farmer checking health of chickens in a poultry farm"
+                loading="lazy"
+            />
+            <div class="img-caption">Daily health checks catch problems early</div>
+        </div>
+    </div>
 
-<section id="market">
-    <h2>7. Market Planning</h2>
-    <p>Plan how you will sell before starting.</p>
-    <ul>
-        <li>Local markets</li>
-        <li>Restaurants</li>
-        <li>Neighbors</li>
-    </ul>
-    <p>Eggs provide daily income while broilers provide bulk income.</p>
-</section>
+    <!-- 7. MARKET -->
+    <div class="section-card" id="market">
+        <div class="section-body">
+            <span class="section-num">Step 7</span>
+            <h2>Market Planning</h2>
+            <p>Plan how you will sell <em>before</em> you start — don't wait until harvest day.</p>
+            <h4>Where to sell:</h4>
+            <ul>
+                <li>Local markets and trading centres</li>
+                <li>Restaurants &amp; hotels (higher price)</li>
+                <li>Neighbours and community members</li>
+                <li>Shops and supermarkets</li>
+            </ul>
+            <div class="tip-box">
+                💡 Eggs provide daily income. Broilers provide bulk income after 6–8 weeks.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop"
+                alt="Fresh eggs and chicken at a local African market"
+                loading="lazy"
+            />
+            <div class="img-caption">Find your buyer before your birds are ready</div>
+        </div>
+    </div>
+
+    <!-- 8. BUDGET -->
+    <div class="section-card flip" id="budget">
+        <div class="section-body">
+            <span class="section-num">Step 8</span>
+            <h2>Basic Budget Idea</h2>
+            <p>Start with what you can afford — don't over-invest early.</p>
+            <ul>
+                <li>Chicks: $1–$2 each (UGX 3,500–7,000)</li>
+                <li>Feed: the biggest ongoing cost (~65%)</li>
+                <li>Housing: depends on local materials</li>
+                <li>Vaccines &amp; drugs: budget 5–10% of total</li>
+            </ul>
+            <div class="tip-box">
+                💡 A 30-bird broiler batch can return your full investment in the first cycle if managed well.
+            </div>
+        </div>
+        <div class="section-img">
+            <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop"
+                alt="Simple farm budget notebook with calculator"
+                loading="lazy"
+            />
+            <div class="img-caption">Track every shilling spent from day one</div>
+        </div>
+    </div>
 
 </main>
 
 <footer>
-    <p>© 2026 Poultry Farming Guide | Designed for Farmers</p>
+    <p>© 2026 OJ Poultry Farming Guide | Designed for Farmers</p>
 </footer>
 
 </body>
